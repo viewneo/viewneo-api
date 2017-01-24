@@ -34,5 +34,16 @@ Try the **curl** request:
 curl -X POST -d '{"name":"My awesome playlist", "comment":"My awesome comment."}' -H 'Content-Type: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
 ```
 
+The response would look like this:
+```
+{
+    "name":"My awesome playlist",
+    "comment":"My awesome comment.",
+    "company_id":221,
+    "updated_at":"2017-01-24 16:37:20",
+    "created_at":"2017-01-24 16:37:20",
+    "id":16047
+}
+```
 ## Examples
 1. [Create Website](./examples/nodejs/create-website.jsx)
