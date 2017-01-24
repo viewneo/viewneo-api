@@ -35,7 +35,7 @@ curl -X POST -d '{"name":"My awesome playlist", "comment":"My awesome comment."}
 ```
 
 The response would look like this:
-```
+```JSON
 {
     "name":"My awesome playlist",
     "comment":"My awesome comment.",
