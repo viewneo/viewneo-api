@@ -5,11 +5,9 @@
 
 ##Resources
 - [Authorization](#authorization)
+- [How-To Send Data](#how-to-send-data)
 - [REST Endpoints](http://cloud.viewneo.com/doc/api)
 - [Examples](./examples/)
-
-## Examples
-1. [Create Website](./examples/nodejs/create-website.jsx)
 
 ## Authorization
 To communicate with the viewneo API you must provide a valid access token in the requests `Authorization` header.
@@ -24,3 +22,17 @@ A simple **curl** request with authorization [getting all playlists](http://clou
 ```
 curl -X GET -H 'Accept: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
 ```
+
+## How-To Send Data
+Data sent to the viewneo API should normally be in JSON format. For example if you want to create a playlist the JSON would look like this:
+```JSON
+{"name":"My awesome playlist", "comment":"My awesome comment."}
+```
+
+Try the **curl** request:
+```
+curl -X POST -d '{"name":"My awesome playlist", "comment":"My awesome comment."}' -H 'Content-Type: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
+```
+
+## Examples
+1. [Create Website](./examples/nodejs/create-website.jsx)
