@@ -5,11 +5,22 @@ Contents to play on your devices are organized as [playlist entries](#playlisten
 
 ##Playlist
 ###id: Integer
-###name: String
+The id of the playlist is set by the system.
+
+###name: String (Required)
+The name should be a meaningful identifier for the playlist.
+
 ###comment: String
+As a comment, you can specify additional information about the playlist. (Default NULL)
+
 ###created_at: DateTime
+Timestamp of the moment the playlist was created. This value is set by the system.
+
 ###updated_at: DateTime
+Timestamp of the moment the playlist was modified the last time. This value is set by the system.
+
 ###company_id: Integer
+Id of the company that owns this playlist. This value is set by the system.
 
 ##PlaylistEntry
 ###id: Integer
@@ -60,7 +71,7 @@ Content is played until the specified time. Format `HH:MM:SS` (Default NULL)
 >**Important:** To take effect of this setting [`play_rule`][play-rule] must go according to schedule
 
 ###weekdays: TinyInteger
-The weekdays value is the sum of the exponentiation of each weekday with the base 2. Every weekday has its own exponent.
+The weekdays value is the sum of the exponentiation of each weekday with the base 2. Every weekday has its own exponent. (Default 0)
 
 | Day | Exponent | Exponentiation | Value |
 | --- | --- | --- | --- |
