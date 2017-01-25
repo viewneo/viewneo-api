@@ -19,7 +19,7 @@ To generate a personal access token visit the [API Settings](https://cloud.viewn
 
 ###Example Usage
 A simple **curl** request with authorization [getting all playlists](http://cloud.viewneo.com/doc/api#!/Playlist/api_playlist_index) belonging to the account associated to the access token. Just replace `YOUR_ACCESS_TOKEN` with a real one.
-```
+```SHELL
 curl -X GET -H 'Accept: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
 ```
 
@@ -30,7 +30,7 @@ Data sent to the viewneo API should normally be in JSON format. For example if y
 ```
 
 Try the **curl** request:
-```
+```SHELL
 curl -X POST -d '{"name":"My awesome playlist", "comment":"My awesome comment."}' -H 'Content-Type: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
 ```
 
