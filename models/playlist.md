@@ -92,6 +92,8 @@ The value was calculated as follows:
 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 62
 ```
 
+>**Important:** To take effect of this setting [`play_rule`][play-rule] must go according to schedule
+
 ###created_at: Timestamp
 Timestamp of the moment the playlist entry was created. This value is set by the system.
 
