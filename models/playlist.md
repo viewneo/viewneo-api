@@ -62,24 +62,24 @@ Content is played until the specified time. Format `HH:MM:SS` (Default NULL)
 ###weekdays: TinyInteger
 The weekdays value is the sum of the exponentiation of each weekday with the base 2. Every weekday has its own exponent.
 
-Day | Exponent | Exponentiation | Value
---- | --- | ---
-Sunday | 0 | 2^0 | 1 
-Monday | 1 | 2^1 | 2
-Tuesday | 2 | 2^2 | 4
-Wednesday | 3 | 2^3 | 8
-Thursday | 4 | 2^4 | 16
-Friday | 5 | 2^5 | 32
-Saturday | 6 | 2^6 | 64
+| Day | Exponent | Exponentiation | Value |
+| --- | --- | --- | --- |
+| Sunday | 0 | 2^0 | 1 |
+| Monday | 1 | 2^1 | 2 |
+| Tuesday | 2 | 2^2 | 4 |
+| Wednesday | 3 | 2^3 | 8 |
+| Thursday | 4 | 2^4 | 16 |
+| Friday | 5 | 2^5 | 32 |
+| Saturday | 6 | 2^6 | 64 |
 
 ***Example***
 
 
 If you want your content to be played on workdays (monday, tuesday, wednesday, thursday, friday) the value for `weekdays` would be `62`.
 The value was calculated as follows:
-
+```
 2^1 + 2^2 + 2^3 + 2^4 + 2^5 = 62
-
+```
 
 ###created_at: Timestamp
 Timestamp of the moment the playlist entry was created. This value is set by the system.
