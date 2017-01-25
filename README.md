@@ -7,7 +7,7 @@
 - [Authorization](#authorization)
 - [How-To Send Data](#how-to-send-data)
 - [REST Endpoints](http://cloud.viewneo.com/doc/api)
-- [Data Models](#data-models)
+- [Data Models](./models/)
 - [Examples](./examples/)
 
 ## Authorization
@@ -46,10 +46,6 @@ The response would look like this:
     "id":16047
 }
 ```
-
-##Data Models                                          
-1. [Playlist](./models/playlist.md#playlist)           
-2. [PlaylistEntry](./models/playlist.md#playlistentry)
 
 ## Examples
 1. [Create Website](./examples/nodejs/create-website.jsx)

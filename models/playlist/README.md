@@ -1,7 +1,7 @@
 #Playlist Model
 Contents to play on your devices are organized as [playlist entries](#playlistentry) in [playlists](#playlist).
 
-![playlist model class diagram](./images/playlist.png)
+![playlist model class diagram](./diagram.png)
 
 ##Playlist
 ###id: Integer
@@ -106,8 +106,12 @@ Id of the playlist this entry belongs to.
 ###playlist_id_as_nested_playlist: Integer
 Id of the playlist if this entry should be a nested playlist or NULL. (Default NULL)
 
+>**Important:** A playlist can be either a nested playlist or a mediafile!
+
 ###media_file_id: Integer
 Id of the associated mediafile or NULL. (Default NULL)
+
+>**Important:** A playlist can be either a nested playlist or a mediafile!
 
 ###company_id: Integer
 Id of the company that owns this playlist entry. This value is set by the system.
