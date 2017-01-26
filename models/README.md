@@ -1,3 +1,4 @@
 #Data Models                                               
-1. [Playlist](./playlist/README.md#playlist)
-2. [PlaylistEntry](./models/README.md#playlistentry)
+1. [Playlist](./playlist/#playlist)
+2. [PlaylistEntry](./models/#playlistentry)
+3. [MediaFile](./playlist/#mediafile)
