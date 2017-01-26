@@ -6,6 +6,16 @@
 ###id: Integer {readOnly}
 The id of the mediafile is set by the system.
 
+###status: TinyInteger {readOnly}
+Some mediafiles will be processed by the system. The status says what is currently happening with the mediafile.
+
+| Value | Status |
+| --- | --- |
+| 0 | Waiting - Mediafile is waiting for some resources e.g. the file is still uploading. |
+| 1 | Converting - The mediafile is currently converted by the system. |
+| 2 | Error - The processing of the mediafile failed. |
+| 3 | Converted - The conversion is completed. |
+
 ###name: String (Required)
 The name should be a meaningful identifier for the mediafile.
 
@@ -53,3 +63,8 @@ Id of the directory where the mediafile should be stored.
 
 ###company_id: Integer {readOnly}
 Id of the company that owns the mediafile. This value is set by the system.
+
+##PhysicalFile
+###id: Integer {readOnly}
+The id of the physical file set by the system.
+
