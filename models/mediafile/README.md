@@ -2,6 +2,7 @@
 
 - [MediaFile](#mediafile)
 - [PhysicalFile](#physicalfile)
+- [Website](#website)
 
 ![mediaFile model class diagram](./diagram.png)
 
@@ -119,3 +120,27 @@ Timestamp set by the system of when the physical file was updated last time.
 
 ###company_id: Integer {readOnly}
 Id of the company that owns the physical file.
+
+##Website
+###id: Integer {readOnly}
+Id of the website.
+
+###url: String (Required)
+URL to the website to be played.
+
+###header: String
+Headers to be attached to the website request as JSON. (Default {})
+
+**Example**
+```JSON
+{"Authorization":"SOME TOKEN", "Content-Type":"application/json"}
+```
+
+###created_at: Timestamp {readOnly}
+Timestamp set by the system of when the website was created.
+
+###updated_at: Timestamp {readOnly}
+Timestamp set by the system of when the website was created.
+
+###company_id: Integer {readOnly}
+Id of the company that owns the website.

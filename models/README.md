@@ -3,3 +3,4 @@
 2. [PlaylistEntry](./playlist/#playlistentry)
 3. [MediaFile](./mediafile/#mediafile)
 4. [PhysicalFile](./mediafile/#physicalfile)
+4. [Website](./mediafile/#website)
