@@ -1,5 +1,8 @@
 #MediaFile Model
 
+- [MediaFile](#mediafile)
+- [PhysicalFile](#physicalfile)
+
 ![mediaFile model class diagram](./diagram.png)
 
 ##MediaFile
@@ -68,3 +71,51 @@ Id of the company that owns the mediafile. This value is set by the system.
 ###id: Integer {readOnly}
 The id of the physical file set by the system.
 
+###status: TinyInteger {readOnly}
+Some mediafiles will be processed by the system. The status says what is currently happening with the mediafile.
+
+| Value | Status |
+| --- | --- |
+| 0 | Waiting - Physical file is waiting for some resources e.g. the file is still uploading. |
+| 1 | Converting - The physical file is currently converted by the system. |
+| 2 | Error - The processing of the physical file failed. |
+| 3 | Converted - The conversion is completed. |
+
+###original_name: String
+The original name of the file is adopted by the uploaded file name.
+
+###original_extension: String
+The original name of the file is adopted by the uploaded file extension.
+
+###file_hash: String {readOnly}
+A hash created with the uploaded file.
+
+###converted_file_hash: String {readOnly}
+The file hash after it is converted.
+
+###extension: String {readOnly}
+The file extension after conversion.
+
+###mime_type: String {readOnly}
+Mime type of the uploaded file.
+
+###file_size: BigInteger {readOnly}
+Size of the physicle file in bytes.
+
+###duration: Integer {readOnly}
+Duration of the file (if it has one e.g. a video) in seconds.
+
+###width: Integer {readOnly}
+Width of the file in pixels.
+
+###height: Integer {readOnly}
+Height of the file in pixels.
+
+###created_at: Timestamp {readOnly}
+Timestamp set by the system of when the physical file was created.
+
+###updated_at: Timestamp {readOnly}
+Timestamp set by the system of when the physical file was updated last time.
+
+###company_id: Integer {readOnly}
+Id of the company that owns the physical file.
