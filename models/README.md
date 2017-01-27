@@ -4,3 +4,4 @@
 3. [MediaFile](./mediafile/#mediafile)
 4. [PhysicalFile](./mediafile/#physicalfile)
 4. [Website](./mediafile/#website)
+5. [Template](./template/#template)
