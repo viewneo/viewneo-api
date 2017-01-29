@@ -1,0 +1,7 @@
+{
+  "name": "viewneo-api",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
