@@ -46,6 +46,3 @@ The response would look like this:
     "id":16047
 }
 ```
-
-## Examples
-1. [Create Website](./examples/nodejs/create-website.jsx)
