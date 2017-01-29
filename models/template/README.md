@@ -50,3 +50,38 @@ Timestamp set by the system of when the template was updated last time.
 
 ###company_id: Integer {readOnly}
 Id of the company that owns the template.
+
+##TemplateElement
+###id: Integer {readOnly}
+The id of the template element is set by the system.
+
+###name: String (Required)
+The name should be a meaningful identifier for the template element.
+
+###drawable_type: String
+
+- `TextElement`
+- `MediaFile`
+
+###external_data_attribute: String
+
+###is_inactive: TinyInt (Required)
+Specifies if the element is not visible.
+
+- **0**: Visible (Default)
+- **1**: Not visible
+
+###datetime_time: String
+
+###datetime_date: String
+
+###datetime_format: String
+
+###created_at: Timestamp {readOnly}
+Timestamp set by the system of when the template element was created.
+
+###updated_at: Timestamp {readOnly}
+Timestamp set by the system of when the template element was updated last time.
+
+###company_id: Integer {readOnly}
+Id of the company that owns the template element.
