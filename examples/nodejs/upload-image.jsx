@@ -1,8 +1,8 @@
-var request = require('request');
-var fs = require('fs');
+const request = require('request');
+const fs = require('fs');
 
 // Your personal access token (see README.md for more information)
-var access_token = 'YOUR ACCESS TOKEN';
+const access_token = 'YOUR ACCESS TOKEN';
 
 // options for the api request including form data
 var options = {

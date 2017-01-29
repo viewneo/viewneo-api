@@ -1,7 +1,7 @@
-var request = require('request');
+const request = require('request');
 
 // Your personal access token (see README.md for more information)
-var access_token = 'YOUR ACCESS TOKEN';
+const access_token = 'YOUR ACCESS TOKEN';
 
 // options for the api request including the json body
 var options = {
