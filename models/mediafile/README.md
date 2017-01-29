@@ -51,6 +51,7 @@ Possible values and meanings are:
 | NULL | Mediafile is a directory |
 | Website | Mediafile is linked to a website |
 | Template | Mediafile is linked to a template |
+| Content | Mediafile is linked to a content created from a template |
 | PhysicalFile | Mediafile is linked to an uploaded physical file |
 
 ###created_at: Timestamp {readOnly}
