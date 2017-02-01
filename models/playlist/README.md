@@ -1,5 +1,9 @@
 #Playlist Model
-Contents to play on your devices are organized as [playlist entries](#playlistentry) in [playlists](#playlist).
+See related REST entpoints [here](https://cloud.viewneo.com/doc/api#/Playlist).
+
+##Index
+- [Playlist](#playlist)
+- [PlaylistEntry](#playlistentry)
 
 ![playlist model class diagram](./diagram.png)
 

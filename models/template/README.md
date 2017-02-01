@@ -1,5 +1,7 @@
 #Template Model
+See related REST entpoints [here](https://cloud.viewneo.com/doc/api#/Template).
 
+##Index
 - [Template](#template)
 
 ##Template

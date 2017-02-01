@@ -1,5 +1,7 @@
 #MediaFile Model
+See related REST entpoints [here](https://cloud.viewneo.com/doc/api#/MediaFile).
 
+##Index
 - [MediaFile](#mediafile)
 - [PhysicalFile](#physicalfile)
 - [Website](#website)
