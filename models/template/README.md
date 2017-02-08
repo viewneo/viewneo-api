@@ -17,7 +17,7 @@ The text direction of the texts used in the template.
 - **0**: Left to right (Default)
 - **1**: Right to left
 
-###external_data_url: String
+###external_data_url: Stri ng
 The URL to the RSS-Feed, Atom-Feed, JSON or XML API you want to get information from. (Default `NULL`)
 
 ###external_data_type: String
