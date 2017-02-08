@@ -7,6 +7,7 @@
 - [Authorization](#authorization)
   * [Personal Access Token](#personal-access-token)
   * [OAuth2](#oauth2)
+  * [Example Access Token Usage](#example-access-token-usage)
 - [How-To Send Data](#how-to-send-data)
 - [REST Endpoints](http://cloud.viewneo.com/doc/api)
 - [Data Models](./models/)
@@ -111,7 +112,7 @@ Curl example:
 curl -H "Content-Type: application/json" -X POST -d '{"grant_type": "refresh_token","refresh_token":"YOUR REFRESH TOKEN",client_id": "YOUR CLIENT ID","client_secret": "YOUR CLIENT SECRET"}' https://cloud.viewneo.com/oauth/token
 ```
 
-### Example Authorization Usage
+### Example Access Token Usage
 Once you got a valid access token here is a simple **curl** request with authorization [getting all playlists](http://cloud.viewneo.com/doc/api#!/Playlist/api_playlist_index) belonging to the account associated to the access token. Just replace `YOUR_ACCESS_TOKEN` with a real one.
 ```SHELL
 curl -X GET -H 'Accept: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
