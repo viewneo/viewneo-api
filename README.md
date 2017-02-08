@@ -26,7 +26,7 @@ To access the viewneo API on a users behalf you can use OAuth2 to get an **acces
 ![oauth](./src/oauth.png)
 
 #### Get authorization code (1. - 3.)
-To get an **authorization code** you have to follow some simple steps.
+To get an **authorization code** the user has to authorize your client to access his account.
 
 To redirect the user to the authorization page you have to build the url first. Add the following key-value parameters as [query string](https://en.wikipedia.org/wiki/Query_string) to the base url `https://cloud.viewneo.com/oauth/authorize`.
 
@@ -111,7 +111,7 @@ Curl example:
 curl -H "Content-Type: application/json" -X POST -d '{"grant_type": "refresh_token","refresh_token":"YOUR REFRESH TOKEN",client_id": "YOUR CLIENT ID","client_secret": "YOUR CLIENT SECRET"}' https://cloud.viewneo.com/oauth/token
 ```
 
-### Example Usage
+### Example Authorization Usage
 Once you got a valid access token here is a simple **curl** request with authorization [getting all playlists](http://cloud.viewneo.com/doc/api#!/Playlist/api_playlist_index) belonging to the account associated to the access token. Just replace `YOUR_ACCESS_TOKEN` with a real one.
 ```SHELL
 curl -X GET -H 'Accept: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
