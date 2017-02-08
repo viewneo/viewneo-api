@@ -41,7 +41,11 @@ A valid redirect url can look like this:
 https://cloud.viewneo.com/oauth/authorize?client_id=9&redirect_uri=https%3A%2F%2Fexample.com%2Fcallback&response_type=code
 ```
 
-After the user will authorize your client he will be redirected to the redirect url with the **authorization code** appended as a get parameter named `code`.
+This is how the authorization page looks like.
+
+![authorization page](/src/authorization_page.png)
+
+After the user authorized your client he will be redirected to the redirect url with the **authorization code** appended as a get parameter named `code`.
 
 ```
 https://example.com/callback?code=AUTHORIZATION_CODE
