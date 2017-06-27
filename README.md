@@ -10,7 +10,7 @@
   * [Example Access Token Usage](#example-access-token-usage)
 - [How-To Send Data](#how-to-send-data)
 - [REST Endpoints](http://cloud.viewneo.com/doc/api)
-- [Data Models](./models/)
+- [Data Models **(Not completed yet)**](./models/)
 - [Examples](./examples/)
 
 ## Authorization
