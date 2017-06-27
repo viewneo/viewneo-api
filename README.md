@@ -17,7 +17,9 @@
 To communicate with the viewneo API you must have a valid access token in the requests `Authorization` header.
 
 ### Personal Access Token
-To generate a personal access token visit the [API Settings](https://cloud.viewneo.com/cms#/dashboard/api) in your viewneo account. Click on "**Generate new token**" and store it in a secure place.
+If you want to access the API in the name of your own account you should generate a personal access token. To generate a personal access token visit the [API Settings](https://cloud.viewneo.com/cms#/dashboard/api) in your viewneo account. Click on "**Generate new token**" and store it in a secure place. 
+
+Personal access tokens are valid until you remove them in your API dashboard.
 
 >**Important:** Treat your personal access tokens like passwords and never share them with anyone.
 
