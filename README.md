@@ -1,7 +1,7 @@
 # viewneo-api
 
 ## About
-[viewneo](https://www.viewneo.com/) is a proprietary, cloud-based Digital Signage Software. You can use viewneo to work with our pre-desigend templates or create your own content within minutes. Furthermore users can integrate dynamic content like homepages, facebook posts, as well as weather and news RSS-Feeds. With our **API** you are able to access full functionality of viewneo and embed your own programs like booking systems into viewneo.
+[viewneo](https://www.viewneo.com/) is a proprietary, cloud-based Digital Signage Software. You can use viewneo in conjunction with our pre-designed templates or create your own content within minutes. Additionally, users can integrate dynamic content like homepages, Facebook posts, in addition to weather and news RSS feeds. Our **API** allows you to access the full functionality of viewneo and embed your own programs, such as booking systems, into viewneo. 
 
 ## Resources
 - [Authorization](#authorization)
@@ -29,9 +29,9 @@ To access the viewneo API on a users behalf you can use OAuth2 to get an **acces
 ![oauth](./src/oauth.png)
 
 #### Get authorization code (1. - 3.)
-To get an **authorization code** the user has to authorize your client to access his account.
+To obtain an **authorization code**, the user has to authorize access to their account. 
 
-To redirect the user to the authorization page you have to build the url first. Add the following key-value parameters as [query string](https://en.wikipedia.org/wiki/Query_string) to the base url `https://cloud.viewneo.com/oauth/authorize`.
+In order to redirect the user to the authorization page, the first step is to first build the URL. Add the following key-value parameters as [query string](https://en.wikipedia.org/wiki/Query_string) to the base url `https://cloud.viewneo.com/oauth/authorize`.
 
 | Key | Value |
 | --- | --- |
@@ -39,16 +39,16 @@ To redirect the user to the authorization page you have to build the url first. 
 | redirect_uri | '[Url encoded](https://en.wikipedia.org/wiki/Percent-encoding)' callback URL to redirect the user after authorization. **Important:** This value has to match the redirect url you set in your client settings |
 | response_type | `code` |
 
-A valid redirect url can look like this:
+A valid redirect URL will look similar to this: 
 ```
 https://cloud.viewneo.com/oauth/authorize?client_id=9&redirect_uri=https%3A%2F%2Fexample.com%2Fcallback&response_type=code
 ```
 
-This is how the authorization page looks like.
+This is how the authorization page will appear. 
 
 ![authorization page](/src/authorization_page.png)
 
-After the user authorized your client he will be redirected to the redirect url with the **authorization code** appended as a get parameter named `code`.
+Once the user has authorized your client, they will be redirected to the redirect URL. The **authorization code** will appear where the parameter `code` is located below. 
 
 ```
 https://example.com/callback?code=AUTHORIZATION_CODE
@@ -82,7 +82,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"grant_type": "authorizati
 ```
 
 
-If everythingThe response looks like this, otherwise you will get a useful error message:
+If everything is working properly it will look like this, otherwise, you will receive an error message outlining the problem. 
 ```JSON
 {
   "token_type": "Bearer",
@@ -115,7 +115,8 @@ curl -H "Content-Type: application/json" -X POST -d '{"grant_type": "refresh_tok
 ```
 
 ### Example Access Token Usage
-Once you got a valid access token here is a simple **curl** request with authorization [getting all playlists](http://cloud.viewneo.com/doc/api#!/Playlist/api_playlist_index) belonging to the account associated to the access token. Just replace `YOUR_ACCESS_TOKEN` with a real one.
+Once you have a valid access token, the following is a simple **curl** request with authorization that is designed to  [get all of the playlists](http://cloud.viewneo.com/doc/api#!/Playlist/api_playlist_index) associated with your account the access token. Just replace `YOUR_ACCESS_TOKEN` with a real one. 
+
 ```SHELL
 curl -X GET -H 'Accept: application/json' -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' 'https://cloud.viewneo.com/api/v1.0/playlist'
 ```
